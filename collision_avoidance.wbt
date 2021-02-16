@@ -1,0 +1,122 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.2623428351606482 -0.9336416759056644 -0.24390460809901718 4.741893752189688
+  position 3.1199431035021075 1.8520827164075575 0.23750382892132577
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+E-puck {
+}
+WoodenBox {
+  translation 0.259719 0.05 0.189787
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.262661 0.05 -0.264014
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.163349 0.05 0.249241
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+Solid {
+  translation 0 0.2 -0.2
+  children [
+    DEF BALL_GEOMETRY Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/red_brick_wall.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.05
+      }
+    }
+  ]
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.00285038 0 -0.521146
+  children [
+    DEF mattWall Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.5
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.25 0.05
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+Solid {
+  translation 0.00424143 0 0.473317
+  children [
+    DEF mattWall Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1 0.25 0.05
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+Solid {
+  translation -0.496585 -1.55431e-15 -0.0385423
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    DEF mattWall Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1 0.25 0.05
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+Solid {
+  translation 0.483228 -1.55431e-15 -0.042034
+  rotation 0 1 0 -1.5707953071795862
+  children [
+    DEF mattWall Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1 0.25 0.05
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
