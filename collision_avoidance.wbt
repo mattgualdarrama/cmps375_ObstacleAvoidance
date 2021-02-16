@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.2623428351606482 -0.9336416759056644 -0.24390460809901718 4.741893752189688
-  position 3.1199431035021075 1.8520827164075575 0.23750382892132577
+  orientation 0.21752689283675866 -0.9394500001494602 -0.2647937841263734 4.479359068364971
+  position 1.3107131482151209 0.9059641032726139 -0.348091984166127
 }
 TexturedBackground {
 }
@@ -14,13 +14,14 @@ Floor {
   size 1 1
 }
 E-puck {
+  controller "avoidObs"
 }
 WoodenBox {
   translation 0.259719 0.05 0.189787
   size 0.1 0.1 0.1
 }
 WoodenBox {
-  translation -0.262661 0.05 -0.264014
+  translation 0.00932717 0.05 -0.282139
   name "wooden box(2)"
   size 0.1 0.1 0.1
 }
@@ -30,7 +31,7 @@ WoodenBox {
   size 0.1 0.1 0.1
 }
 Solid {
-  translation 0 0.2 -0.2
+  translation -0.193105 0.2 0.076011
   children [
     DEF BALL_GEOMETRY Shape {
       appearance PBRAppearance {
